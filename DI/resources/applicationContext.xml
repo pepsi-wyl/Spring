@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <beans>
+
+        <import resource="C_P.xml"/>
+
+        <!--
+        Spring默认使用无参构造
+        -->
+
+        <!--        <bean id="user_1" class="pojo.User" name="user无参构造"/>-->
+
+        <!-- 有参构造 name-->
+        <bean id="user_2" class="pojo.User" name="user_2">
+            <constructor-arg name="name" value="zhazha"/>
+        </bean>
+        <!--有参构造 index-->
+        <!--        <bean id="user_t2" class="pojo.User" name="user_2">-->
+        <!--            <constructor-arg index="0" value="zhazha"/>-->
+        <!--        </bean>-->
+        <!--有参构造 type-->
+        <!--        <bean id="user_t2" class="pojo.User" name="user_2">-->
+        <!--            <constructor-arg type="java.lang.String" value="zhazha"/>-->
+        <!--        </bean>-->
+
+
+
+
+        <bean id="Address" class="pojo.Address">
+            <!--属性注入-->
+            <property name="address" value="河南省安阳市"/>
+        </bean>
+        <bean id="student" class="pojo.Student" name="student">
+            <!--属性注入-->
+            <property name="name" value="zhazha"/>
+            <!--Bean注入-->
+            <property name="address" ref="Address"/>
+            <!--数组注入-->
+            <property name="books">
+                <array>
+                    <value>西游记</value>
+                    <value>红楼梦</value>
+                    <value>水浒传</value>
+                    <value>三国演变</value>
+                </array>
+            </property>
+            <!--List注入-->
+            <property name="hobbies">
+                <list>
+                    <value>java</value>
+                    <value>C++</value>
+                    <value>Mysql</value>
+                </list>
+            </property>
+            <!--Map注入-->
+            <property name="card">
+                <map>
+                    <entry key="学号" value="2015105456"/>
+                    <entry key="电话" value="13673330837"/>
+                </map>
+            </property>
+            <!--Set注入-->
+            <property name="games">
+                <set>
+                    <value>跑跑卡丁车</value>
+                    <value>GTA5</value>
+                </set>
+            </property>
+            <!--Null注入-->
+            <!--  <property name="wife" value="">   设置为空串-->
+            <property name="wife">
+                <null/>
+            </property>
+            <!--property注入-->
+            <property name="info">
+                <props>
+                    <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                    <prop key="user">root</prop>
+                    <prop key="password">bsy8023.00</prop>
+                    <prop key="url">jdbc:mysql://localhost:3306/jdbc</prop>
+                </props>
+            </property>
+        </bean>
+    </beans>
+
+
+</beans>
