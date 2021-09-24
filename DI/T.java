@@ -52,4 +52,18 @@ public class T {
         System.out.println(person_C);
     }
 
+    /**
+     * scope 单例模式 原型模式
+     */
+    @Test
+    public void scope() {
+        ApplicationContext context = ApplicationContextUtils.getApplicationContext();
+        Person person_p1 = (Person) context.getBean("person_P");
+        Person person_p2 = (Person) context.getBean("person_P");
+        System.out.println(person_p1 == person_p2);
+        Person person_C1 = (Person) context.getBean("person_C");
+        Person person_C2 = (Person) context.getBean("person_C");
+        System.out.println(person_C1 == person_C2);
+    }
+
 }
