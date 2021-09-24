@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    使用Spring来创建对象  托管对象
+    -->
+
+    <!--
+            Bean的配置
+    id         bean的id标识符
+    class      bean对象所对应的类型（包名+类名）
+    property   相当于给对象中的属性设置一个值
+    value      相当于对属性的值
+    ref        相当于引用对象
+    name       别名，更高级，可以同时取多个别名
+    import     导入配置文件
+    -->
+    
+    <bean id="Hello" class="pojo.Hello" name="helloWorld helloWorld1,helloWorld2;helloWorld3">
+        <property name="str" value="HelloWorld!"/>
+    </bean>
+    <bean id="userService" class="service.UserService" name="Service Service1,Service2;Service3">
+        <property name="userDao" ref="oracle"/>
+    </bean>
+    
+    <!--别名-->
+    <alias name="Hello" alias="hello"/>
+    
+    <import resource="new.xml"/>
+
+   
+
+
+</beans>
