@@ -9,9 +9,14 @@
     <!--    xmlns:p="http://www.springframework.org/schema/p"-->
     <!--    xmlns:c="http://www.springframework.org/schema/c"-->
 
+       
+     
     <!--p命名空间注入，可以直接注入属性的值：property-->
-    <bean id="personP" class="pojo.Person" name="person_P" p:name="zhazha" p:age="20"/>
+    <!--    单例模式（Spring默认机制）（每次从容器中get的时候，都是一个对象）  默认-->
+    <bean id="personP" class="pojo.Person" name="person_P" p:name="zhazha" p:age="20" scope="singleton"/>
     <!--c命名空间注入，通过构造器注入-->
-    <bean id="PersonC" class="pojo.Person" name="person_C" c:name="zhazha" c:age="20"/>
+    <!--    原型模式（每次从容器中get的时候，都会产生新对象）-->
+    <bean id="PersonC" class="pojo.Person" name="person_C" c:name="zhazha" c:age="20" scope="prototype"/>
+
 
 </beans>
