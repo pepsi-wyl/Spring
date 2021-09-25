@@ -20,6 +20,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 //相当于<bean id="user" class="pojo.User"/>
+@Repository   dao
+@Service      Service
+@Controller   controller
+
+
 @Scope("singleton")
 //作用域
 public class User {
