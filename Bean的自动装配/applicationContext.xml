@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <beans>
+
+        <!--
+             Bean的自动装配
+        autowire="byName"  会自动在容器上下文中查找，和自己对象set方法后面的值对应的        保证所有bean的id唯一并且这个bean需要和自动注入的属性的set方法的值-致!
+        autowire="byType"  会自动在容器上下文中查找，和自己对象属性类型相同的bean           保证所有bean的class唯一并且这个bean需要和自动注入的属性的类型-致!
+        -->
+
+        <!--        <bean id="cat" class="pojo.Cat"/>-->
+        <!--        <bean id="dog" class="pojo.Dog"/>-->
+        <!--        <bean id="people" class="pojo.People" autowire="byName">-->
+        <!--            <property name="name" value="zhazha" />-->
+        <!--        </bean>-->
+
+        <!--        <bean class="pojo.Cat"/>-->
+        <!--        <bean class="pojo.Dog"/>-->
+        <!--        <bean id="people" class="pojo.People" autowire="byType">-->
+        <!--            <property name="name" value="zhazha"/>-->
+        <!--        </bean>-->
+
+
+    </beans>
+
+</beans>
