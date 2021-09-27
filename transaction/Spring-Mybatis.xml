@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+">
+
+    <beans>
+
+        <!--data source-->   <!--使用Spring数据源替换Mybatis   使用Spring提供的JDBC :DriverManagerDataSource-->
+        <bean id="dateSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName"
+                      value="com.mysql.cj.jdbc.Driver"/>
+            <property name="url"
+                      value="jdbc:mysql://localhost:3306/mybatis?useSSL=true&amp;useUnicode=true&amp;characterEncoding=utf8&amp;serverTimezone=UTC&amp;rewriteBatchedStatements=true"/>
+            <property name="username"
+                      value="root"/>
+            <property name="password"
+                      value="bsy8023.00"/>
+        </bean>
+
+        <!--sqlSessionFactory-->
+        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <!--配置数据源-->
+            <property name="dataSource" ref="dateSource"/>
+            <!--引入外部mybatis-config.xml-->
+            <property name="configLocation" value="mybatis-config.xml"/>
+            <!--起别名-->
+            <property name="typeAliasesPackage" value="pojo"/>
+            <!--映射器 mappers-->
+            <property name="mapperLocations" value="dao/*.xml"/>
+        </bean>
+
+        <!--sqlSession-->
+        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+            <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+        </bean>
+
+
+        <!--配置声明式事务-->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <property name="dataSource" ref="dateSource"/>
+        </bean>
+
+        <!--给哪些方法配置事务-->
+        <tx:advice id="txActive" transaction-manager="transactionManager">
+            <tx:attributes>                       <!--配置事务的传播特性：new propagation=-->
+                <tx:method name="*" propagation="REQUIRED"/>
+            </tx:attributes>
+        </tx:advice>
+
+        <!--配置事务切入-->
+        <aop:config>
+            <aop:pointcut id="txPointCut" expression="execution(* dao.*.*(..))"/>
+            <aop:advisor advice-ref="txActive" pointcut-ref="txPointCut"/>
+        </aop:config>
+
+    </beans>
+
+
+</beans>
