@@ -1,6 +1,8 @@
 package dao;
 
+import lombok.*;
 import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 import pojo.User;
@@ -12,18 +14,28 @@ import java.util.List;
  * @author by wyl
  * @date 2021/9/26.
  */
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@EnableAspectJAutoProxy
+
 @Repository
 @Scope("singleton")      //Bean作用域
 
 public class UserMapperImpl implements UserMapper {
 
+    /**
+     * 注入sqlSessionTemplate
+     */
     @Resource(name = "sqlSession")
     private SqlSessionTemplate sqlSessionTemplate;
 
+    /*
+     *
+     */
     @Override
     public List<User> getUserList() {
-        sqlSessionTemplate.getMapper(UserMapper.class).addUser(new User(5, "zhazha", "888888"));
-        sqlSessionTemplate.getMapper(UserMapper.class).deleteUser(5);
         return sqlSessionTemplate.getMapper(UserMapper.class).getUserList();
     }
 
@@ -38,3 +50,4 @@ public class UserMapperImpl implements UserMapper {
     }
 
 }
+
