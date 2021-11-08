@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--开启注解支持-->
+    <context:annotation-config/>
+
+    <!--扫描注解包-->
+    <!--    <context:component-scan base-package="pojo"/>-->
+    <!--    <context:component-scan base-package="dao"/>-->
+    <!--    <context:component-scan base-package="service"/>-->
+    <!--    <context:component-scan base-package="controller"/>-->
+    <!--扫描多个包 ","   ";"  " "隔开-->
+    <context:component-scan base-package="pojo,dao,service,controller"/>
+
+    <!--配置扫描 -->
+    <!--    <context:component-scan base-package="pojo" use-default-filters="false">-->
+    <!--        &lt;!&ndash;包含&ndash;&gt;-->
+    <!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Component"/>-->
+    <!--        &lt;!&ndash;不包含&ndash;&gt;-->
+    <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service"/>-->
+    <!--    </context:component-scan>-->
+    <!--    <context:component-scan base-package="dao" use-default-filters="false">-->
+    <!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository"/>-->
+    <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Component"/>-->
+    <!--    </context:component-scan>-->
+    <!--    <context:component-scan base-package="service" use-default-filters="false">-->
+    <!--        <context:include-filter type="annotation" expression="org.springframework.stereotype.Service"/>-->
+    <!--        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>-->
+    <!--    </context:component-scan>-->
+
+
+</beans>
