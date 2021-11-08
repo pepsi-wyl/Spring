@@ -7,10 +7,38 @@
     <!--启动缓存-->
     <cache type="org.mybatis.caches.ehcache.EhcacheCache"/>
 
+    <!--查找所有用户-->
     <select id="getUserList" resultType="user">
         select *
         from mybatis.user;
     </select>
 
+    <!--查找用户的数量-->
+    <select id="getUserCount" resultType="java.lang.Integer">
+        select count(1)
+        from mybatis.user;
+    </select>
+
+    <!--添加用户-->
+    <insert id="addUser">
+        insert into mybatis.user value (#{id}, #{name}, #{pwd});
+    </insert>
+
+    <!--删除用户-->
+    <delete id="deleteUserByID">
+        delete
+        from mybatis.user
+        where id = #{id};
+    </delete>
+
+    <!--修改用户-->
+    <update id="modifyUserById">
+        update mybatis.user
+        set name=#{name},
+            pwd=${pwd}
+        where id = #{id};
+    </update>
 
 </mapper>
+
+
