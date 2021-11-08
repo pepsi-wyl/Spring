@@ -2,17 +2,17 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/tx
         https://www.springframework.org/schema/tx/spring-tx.xsd
-        http://www.springframework.org/schema/aop
-        https://www.springframework.org/schema/aop/spring-aop.xsd
         http://www.springframework.org/schema/context
         https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
 ">
 
 
@@ -22,10 +22,9 @@
 
     <beans>
 
-
         <!--data source-->
-        <!--使用Spring数据源替换Mybatis   使用Spring提供的JDBC:DriverManagerDataSource -->
-        <bean id="dateSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--配置数据库连接池 使用alibaba.Druid.pool.DruidDataSource-->
+        <bean id="dateSource" class="com.alibaba.druid.pool.DruidDataSource">
             <property name="driverClassName"
                       value="${mysql.driverClassName}"/>
             <property name="url"
@@ -51,10 +50,10 @@
         </bean>
 
 
-        <!--sqlSession-->
-        <!--利用SqlSessionTemplate生成sqlSession-->
-        <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
-            <constructor-arg name="sqlSessionFactory" ref="sqlSessionFactory"/>
+        <!--配置扫描Dao接口，动态实现Dao接口Mapper注入到Spring容器中-->
+        <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+            <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+            <property name="basePackage" value="dao"/>
         </bean>
 
 
@@ -62,13 +61,15 @@
         配置声明式事务
         -->
 
-        <!--开启 Spring 的事务处理功能     创建事务管理器    mybatis使用DataSourceTransactionManager  -->
+        <!--开启 Spring 的事务处理功能     创建事务管理器    Mybatis,JDBC使用DataSourceTransactionManager  -->
         <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
             <!--注入数据源-->
             <property name="dataSource" ref="dateSource"/>
         </bean>
 
-        <!--注解配置-->
+        <!--
+        注解配置
+        -->
 
         <!--开启事务注解-->
         <tx:annotation-driven transaction-manager="transactionManager"/>
@@ -76,22 +77,22 @@
 
         <!--xml配置-->
 
-        <!--        &lt;!&ndash;给哪些方法配置事务&ndash;&gt;-->
-        <!--        &lt;!&ndash;advice 配置事务通知&ndash;&gt;-->
-        <!--        <tx:advice id="txActive" transaction-manager="transactionManager">-->
-        <!--            <tx:attributes>-->
-        <!--                &lt;!&ndash;配置事务的传播特性：new propagation=&ndash;&gt;-->
-        <!--                <tx:method name="*" propagation="REQUIRED"/>-->
-        <!--            </tx:attributes>-->
-        <!--        </tx:advice>-->
+        <!--给哪些方法配置事务-->
+        <!--advice 配置事务通知-->
+        <tx:advice id="txActive" transaction-manager="transactionManager">
+            <tx:attributes>
+                <!--配置事务的传播特性：new propagation=-->
+                <tx:method name="*" propagation="REQUIRED" isolation="REPEATABLE_READ" timeout="10" read-only="false"/>
+            </tx:attributes>
+        </tx:advice>
 
-        <!--        &lt;!&ndash;配置事务切入&ndash;&gt;-->
-        <!--        <aop:config>-->
-        <!--            &lt;!&ndash;切入点&ndash;&gt;-->
-        <!--            <aop:pointcut id="txPointCut" expression="execution(* service.*.*(..))"/>-->
-        <!--            &lt;!&ndash;事务切入&ndash;&gt;-->
-        <!--            <aop:advisor advice-ref="txActive" pointcut-ref="txPointCut"/>-->
-        <!--        </aop:config>-->
+        <!--配置事务切入-->
+        <aop:config>
+            <!--切入点-->
+            <aop:pointcut id="txPointCut" expression="execution(* service.*.*(..))"/>
+            <!--事务切入-->
+            <aop:advisor advice-ref="txActive" pointcut-ref="txPointCut"/>
+        </aop:config>
 
     </beans>
 
