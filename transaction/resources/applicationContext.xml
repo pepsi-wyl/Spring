@@ -19,9 +19,7 @@
     <context:annotation-config/>
 
     <!--扫描注解  组件扫描-->
-    <context:component-scan base-package="dao"/>
-    <context:component-scan base-package="pojo"/>
-    <context:component-scan base-package="service"/>
+    <context:component-scan base-package="pojo service"/>
 
     <!--开启AOP注解支持-->
     <aop:aspectj-autoproxy/>
