@@ -1,17 +1,17 @@
 package service;
 
 import dao.UserMapper;
-import org.springframework.transaction.annotation.Isolation;
-import pojo.User;
-import utils.ApplicationContextUtils;
-
-import lombok.*;
-
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
+import pojo.User;
+import utils.ApplicationContextUtils;
 
 import javax.annotation.Resource;
 
@@ -25,25 +25,26 @@ import javax.annotation.Resource;
 @NoArgsConstructor
 @EnableAspectJAutoProxy
 
-@Service
+@Service(value = "userService")
 @Scope("singleton")
 
 
 /**
- * 注解配置事务 @Transactional
- * propagation:    事务传播行为     REQUIRED  REQUIRES_NEW
- * isolation:      事务隔离级别     MYSQL默认:REPEATABLE_READ(不可重复读)
- * timeout:        超时时间        默认-1(不超时)  可以设置 S为单位
- * readOnly:       是否只读        默认:false  true只能执行查询操作
- * rollbackFor:    回滚           配置异常类型
- * noRollbackFor:  不回滚          配置异常类型
+ * 注解配置事务 @Transactional      可以加在类上/方法上
+ * propagation:    事务传播行为(7种)      REQUIRED  REQUIRES_NEW    (事务如何执行)
+ * isolation:      事务隔离级别           MYSQL默认:REPEATABLE_READ(不可重复读)
+ * timeout:        超时时间              默认-1(不超时)  可以设置 S为单位    (在一定事件内提交，否则回滚)
+ * readOnly:       是否只读              默认:false  true只能执行查询操作
+ * rollbackFor:    回滚                  配置异常类型      (设置出现那些异常回滚)
+ * noRollbackFor:  不回滚                配置异常类型      (设置出现那些异常回滚)
  */
 
 @Transactional
         (
                 propagation = Propagation.REQUIRED,
                 isolation = Isolation.REPEATABLE_READ,
-                timeout = 10
+                timeout = 10,
+                readOnly = false
         )
 
 public class UserService {
@@ -52,7 +53,7 @@ public class UserService {
     /**
      * 注入userMapper
      */
-    @Resource(name = "userMapperImpl")
+    @Resource(name = "userMapper")
     private UserMapper userMapper;
 
 
@@ -65,6 +66,10 @@ public class UserService {
         user.setId(5);
         user.setName("zhazha");
         user.setPwd("888888");
+        /**
+         * 模拟异常
+         */
+        //int num = 10 / 0;
         userMapper.addUser(user);
         userMapper.deleteUser(5);
         userMapper.getUserList().forEach((v) -> System.out.println(v));
@@ -72,3 +77,4 @@ public class UserService {
 
 
 }
+
