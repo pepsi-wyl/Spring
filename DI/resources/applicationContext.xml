@@ -1,91 +1,121 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-        https://www.springframework.org/schema/beans/spring-beans.xsd">
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+">
 
-    <beans>
+    <!--导入配置文件-->
+    <import resource="C_P.xml"/>
+    <import resource="context-file.xml"/>
 
-        <import resource="C_P.xml"/>
+    <!--scope Bean的作用域  托管对象的方式-->
+    <!--单例模式（Spring默认机制）（加载配置文件时候就创建对象   每次从容器中get的时候，都是一个对象）-->
+    <!--原型模式（在getBean时候才创建对象   每次从容器中get的时候，都会产生新对象）-->
 
-        <!--
-        Spring默认使用无参构造
-        -->
+    <!--FactoryBean-->
+    <bean id="MyBean" class="FactoryBean.MyBean" name="myBean"/>
 
-        <!--        <bean id="user_1" class="pojo.User" name="user无参构造"/>-->
+    <!--
+    构造器注入   创建对象操作
+    Spring默认使用无参构造
+    -->
+    <!--无参构造-->
+    <!--<bean id="user_1" class="pojo.User" name="user_无参构造"/>-->
+    <!--name index type   三种类型的有参构造-->
+    <!-- 有参构造 name   常用  -->
+    <bean id="user_2" class="pojo.User" name="user_有参构造" scope="singleton">
+        <property name="name" value="zha"></property>
+        <constructor-arg name="name" value="zhazha"/>
+    </bean>
+    <!--有参构造 index-->
+    <!--        <bean id="user_2" class="pojo.User" name="user_有参构造">-->
+    <!--            <constructor-arg index="0" value="zhazha"/>-->
+    <!--        </bean>-->
+    <!--有参构造 type 不建议使用  -->
+    <!--        <bean id="user_2" class="pojo.User" name="user_有参构造">-->
+    <!--            <constructor-arg type="java.lang.String" value="zhazha"/>-->
+    <!--        </bean>-->
 
-        <!-- 有参构造 name-->
-        <bean id="user_2" class="pojo.User" name="user_2">
-            <constructor-arg name="name" value="zhazha"/>
-        </bean>
-        <!--有参构造 index-->
-        <!--        <bean id="user_t2" class="pojo.User" name="user_2">-->
-        <!--            <constructor-arg index="0" value="zhazha"/>-->
-        <!--        </bean>-->
-        <!--有参构造 type-->
-        <!--        <bean id="user_t2" class="pojo.User" name="user_2">-->
-        <!--            <constructor-arg type="java.lang.String" value="zhazha"/>-->
-        <!--        </bean>-->
+    <!--
+    属性DI依赖注入
+    -->
+    <!--property属性注入  CDATA 特殊字符注入-->
+    <bean id="Address" class="pojo.Address" name="address" scope="singleton">
+        <property name="address">
+            <value><![CDATA[<<河南省安阳市>>]]></value>
+        </property>
+    </bean>
+
+    <bean id="Student" class="pojo.Student" name="student" scope="singleton">
+
+        <!--属性注入-->
+        <property name="name" value="zhazha"/>
+
+        <!--外部Bean注入  ref注入-->
+        <property name="address" ref="address"/>
 
 
+        <!--内部Bean注入  不常用-->
+        <!--<property name="address">-->
+        <!--    <bean id="Address"  class="pojo.Address" name="address">-->
+        <!--          <property name="address" value="河南省安阳市"/>-->
+        <!--    </bean>-->
+        <!--</property>-->
 
+        <!--数组注入-->
+        <property name="books">
+            <array>
+                <value>西游记</value>
+                <value>红楼梦</value>
+                <value>水浒传</value>
+                <value>三国演变</value>
+            </array>
+        </property>
 
-        <bean id="Address" class="pojo.Address">
-            <!--属性注入-->
-            <property name="address" value="河南省安阳市"/>
-        </bean>
-        <bean id="student" class="pojo.Student" name="student">
-            <!--属性注入-->
-            <property name="name" value="zhazha"/>
-            <!--Bean注入-->
-            <property name="address" ref="Address"/>
-            <!--数组注入-->
-            <property name="books">
-                <array>
-                    <value>西游记</value>
-                    <value>红楼梦</value>
-                    <value>水浒传</value>
-                    <value>三国演变</value>
-                </array>
-            </property>
-            <!--List注入-->
-            <property name="hobbies">
-                <list>
-                    <value>java</value>
-                    <value>C++</value>
-                    <value>Mysql</value>
-                </list>
-            </property>
-            <!--Map注入-->
-            <property name="card">
-                <map>
-                    <entry key="学号" value="2015105456"/>
-                    <entry key="电话" value="13673330837"/>
-                </map>
-            </property>
-            <!--Set注入-->
-            <property name="games">
-                <set>
-                    <value>跑跑卡丁车</value>
-                    <value>GTA5</value>
-                </set>
-            </property>
-            <!--Null注入-->
-            <!--  <property name="wife" value="">   设置为空串-->
-            <property name="wife">
-                <null/>
-            </property>
-            <!--property注入-->
-            <property name="info">
-                <props>
-                    <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
-                    <prop key="user">root</prop>
-                    <prop key="password">bsy8023.00</prop>
-                    <prop key="url">jdbc:mysql://localhost:3306/jdbc</prop>
-                </props>
-            </property>
-        </bean>
-    </beans>
+        <!--List注入-->
+        <property name="hobbies">
+            <list>
+                <value>java</value>
+                <value>C++</value>
+                <value>Mysql</value>
+            </list>
+        </property>
 
+        <!--Map注入-->
+        <property name="card">
+            <map>
+                <entry key="学号" value="2015105456"/>
+                <entry key="电话" value="13673330837"/>
+            </map>
+        </property>
+
+        <!--Set注入-->
+        <property name="games">
+            <set>
+                <value>跑跑卡丁车</value>
+                <value>GTA5</value>
+            </set>
+        </property>
+
+        <!--Null注入-->
+        <!--  <property name="wife" value="">   设置为空串-->
+        <property name="wife">
+            <null/>
+        </property>
+
+        <!--property注入-->
+        <property name="info">
+            <props>
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="user">root</prop>
+                <prop key="password">123456</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/jdbc</prop>
+            </props>
+        </property>
+
+    </bean>
 
 </beans>
