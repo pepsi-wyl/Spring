@@ -10,6 +10,10 @@ import lombok.NoArgsConstructor;
  * @date 2021/9/24.19点49分
  */
 
+/**
+ * lombok生成 java Bean
+ */
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -18,3 +22,4 @@ import lombok.NoArgsConstructor;
 public class Address {
     private String address;
 }
+
