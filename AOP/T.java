@@ -1,6 +1,8 @@
+import config.ConfigAOP;
 import dao.UserDao;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import utils.ApplicationContextUtils;
 
 /**
@@ -10,7 +12,14 @@ import utils.ApplicationContextUtils;
 public class T {
 
     @Test
-    public void t1() {
+    public void t_Annotation() {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ConfigAOP.class);
+        UserDao userDao = context.getBean("userDaoImpl", UserDao.class);
+        userDao.add();
+    }
+
+    @Test
+    public void t_XMl() {
         ApplicationContext context = ApplicationContextUtils.getApplicationContext();
         UserDao userDao = context.getBean("userDaoImpl", UserDao.class);
         userDao.add();
