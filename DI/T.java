@@ -1,5 +1,6 @@
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import pojo.Address;
 import pojo.Person;
 import pojo.Student;
 import pojo.User;
@@ -9,13 +10,42 @@ import java.util.Arrays;
 
 /**
  * @author by wyl
- * @date 2021/9/24.19点51分
+ * @date 2021/11/5.09点57分
  */
 public class T {
+    /**
+     * FactoryBean
+     */
+    @Test
+    public void FactoryBean_T() {
+        ApplicationContext context = ApplicationContextUtils.getApplicationContext();
+        System.out.println(context.getBean("myBean", Address.class));
+    }
+
+    /**
+     * 构造器注入
+     */
+    @Test
+    public void constructor() {
+        ApplicationContext context = ApplicationContextUtils.getApplicationContext();     //在加载配置文件时候就已经载入对象
+
+//        User user = (User) context.getBean("user_无参构造");
+//        System.out.println(user);
+
+        User user1 = (User) context.getBean("user_有参构造");
+        System.out.println(user1);
+        User user2 = (User) context.getBean("user_有参构造");
+        System.out.println(user1 == user2);     //相当于在加载配置文件时候就已经初始化对象成功    并放入容器中
+
+    }
 
     @Test
     public void DI_T() {
         ApplicationContext context = ApplicationContextUtils.getApplicationContext();
+
+        Address address = (Address) context.getBean("address");
+        System.out.println(address);
+
         Student student = (Student) context.getBean("student");
         System.out.println(student.getName());
         System.out.println(student.getAddress());
@@ -27,18 +57,6 @@ public class T {
         System.out.println(student.getInfo());
     }
 
-    /**
-     * 构造器注入
-     */
-    @Test
-    public void constructor() {
-        ApplicationContext context = ApplicationContextUtils.getApplicationContext();
-//        context.getBean("user无参构造");
-        User user1 = (User) context.getBean("user_2");
-        System.out.println(user1);
-        User user2 = (User) context.getBean("user_2");
-        System.out.println(user1 == user2);     //相当于在加载配置文件时候就已经初始化对象成功    并放入容器中
-    }
 
     /**
      * 特殊注入
@@ -53,7 +71,7 @@ public class T {
     }
 
     /**
-     * scope 单例模式 原型模式
+     * scope 单例模式 原型模式  Bean的声明周期
      */
     @Test
     public void scope() {
@@ -65,5 +83,5 @@ public class T {
         Person person_C2 = (Person) context.getBean("person_C");
         System.out.println(person_C1 == person_C2);
     }
-
 }
+
