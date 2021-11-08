@@ -1,32 +1,35 @@
 package pojo;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
-
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
-import java.util.Set;
+import lombok.ToString;
 
 /**
  * @author by wyl
- * @date 2021/9/24.19点51分
+ * @date 2021/9/24.20点28分
  */
 
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
+
+@ToString
 @EqualsAndHashCode
 
-public class Student {
+public class User {
+
     private String name;
-    private Address address;
-    private String[] books;
-    private List<String> hobbies;
-    private Map<String, String> card;
-    private Set<String> games;
-    private String wife;
-    private Properties info;
+
+    public User() {
+        System.out.println("User无参构造!");
+    }
+
+    public User(String name) {
+        this.name = name;
+        System.out.println("User有参构造!");
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
