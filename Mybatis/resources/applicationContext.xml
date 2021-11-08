@@ -12,18 +12,20 @@
         https://www.springframework.org/schema/aop/spring-aop.xsd
 ">
 
-    <import resource="Spring-Mybatis.xml"/>
+
+    <!--引入Mybatis配置文件-->
+    <import resource="classpath:Spring-Mybatis.xml"/>
+
 
     <!--开启注解支持-->
     <context:annotation-config/>
     <!--扫描注解-->
     <context:component-scan base-package="dao"/>
     <context:component-scan base-package="pojo"/>
-
     <!--开启AOP注解支持-->
     <aop:aspectj-autoproxy/>
 
-    <bean id="userMapper2" class="dao.UserMapperImpl2">
+    <bean id="userMapperExtends" class="dao.UserMapperImplExtends">
         <property name="sqlSessionFactory" ref="sqlSessionFactory"></property>
     </bean>
 
