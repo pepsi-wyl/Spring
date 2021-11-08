@@ -15,18 +15,22 @@ import java.util.Set;
  * @date 2021/9/24.19点51分
  */
 
+
+/**
+ * lombok生成 java Bean
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode
 
 public class Student {
-    private String name;
-    private Address address;
-    private String[] books;
-    private List<String> hobbies;
-    private Map<String, String> card;
-    private Set<String> games;
-    private String wife;
-    private Properties info;
+    private String name;                //name ---  value
+    private Address address;            //name ---  ref
+    private String[] books;             //name ---> array ---> value
+    private List<String> hobbies;       //name ---> list  ---> value
+    private Map<String, String> card;   //name ---> map   ---> entry --- value
+    private Set<String> games;          //name ---> set   ---> value
+    private String wife;                //name ---> null
+    private Properties info;            //name ---> props ---> prop
 }
