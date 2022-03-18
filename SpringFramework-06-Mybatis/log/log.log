@@ -1,0 +1,508 @@
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1416706187.
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5471388b]
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]==>  Preparing: select * from mybatis.user where id = ?; 
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]==> Parameters: 1(Integer)
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]<==      Total: 1
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1416706187.
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5471388b]
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]==>  Preparing: select * from mybatis.user where id = ?; 
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]==> Parameters: 1(Integer)
+[DEBUG][21-09-26][dao.UserMapper.getUserByID]<==      Total: 1
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1379148981.
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@523424b5]
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]PooledDataSource forcefully closed/removed all connections.
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Opening JDBC Connection
+[DEBUG][21-09-26][org.apache.ibatis.datasource.pooled.PooledDataSource]Created connection 1379148981.
+[DEBUG][21-09-26][org.apache.ibatis.transaction.jdbc.JdbcTransaction]Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@523424b5]
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b3df93] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@29a69a35] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b3df93]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b3df93] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@29a69a35] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10b3df93]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@22bd2039] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@22bd2039] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@22bd2039] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@324dcd31]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15dd5ac2] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15dd5ac2] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@15dd5ac2] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f0628de]
+[DEBUG][21-09-26][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aaf4f07] was not registered for synchronization because synchronization is not active
+[DEBUG][21-09-26][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-09-26][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7965a51c] will not be managed by Spring
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-09-26][dao.UserMapper.getUserList]<==      Total: 4
+[DEBUG][21-09-26][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3aaf4f07]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@622ef26a] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@50f40653] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]<==      Total: 2000
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@622ef26a]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@622ef26a] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@50f40653] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]<==      Total: 2000
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@622ef26a]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@271f18d3] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6e57b5e9] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id=?; 
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]==> Parameters: 1(Integer)
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]<==    Updates: 1
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@271f18d3]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7048f722] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7b3315a5] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select *from mybatis.user 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7048f722]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@437e951d] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@36dfbdaf] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]<==      Total: 1999
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@437e951d]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e6ee0bc] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7bb35cc6] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]<==      Total: 1999
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e6ee0bc]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a9c4b0] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6411d3c8] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@74a9c4b0]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bd51ed8] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1abc9f14] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id = ?; 
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]==> Parameters: 2(Integer)
+[DEBUG][21-10-02][dao.UserMapper.deleteUserByID]<==    Updates: 1
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bd51ed8]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bd51ed8] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1abc9f14] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.addUser]==>  Preparing: insert into mybatis.user value (?, ?, ?); 
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bd51ed8]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11963225] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6f3f0fae] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.addUser]==>  Preparing: insert into mybatis.user value (?, ?, ?); 
+[DEBUG][21-10-02][dao.UserMapper.addUser]==> Parameters: 2001(Integer), zhazha(String), 888888(String)
+[DEBUG][21-10-02][dao.UserMapper.addUser]<==    Updates: 1
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11963225]
+[DEBUG][21-10-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d526ad9] was not registered for synchronization because synchronization is not active
+[DEBUG][21-10-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[DEBUG][21-10-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6a0ac48e] will not be managed by Spring
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-10-02][dao.UserMapper.getUserList]<==      Total: 1999
+[DEBUG][21-10-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d526ad9]
+[DEBUG][21-11-02][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-02][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-02][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dedb4a6] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-02][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-02][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-02][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@48ea2003] will not be managed by Spring
+[DEBUG][21-11-02][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-02][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-02][dao.UserMapper.getUserList]<==      Total: 1999
+[DEBUG][21-11-02][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3dedb4a6]
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-04][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-04][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-0} closing ...
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-0} closing ...
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60c16548] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6272c96f] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]<==      Total: 2000
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60c16548]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b9dfc5a] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]<==      Total: 2000
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3c89bb12] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.addUser]==>  Preparing: insert into mybatis.user value (?, ?, ?); 
+[DEBUG][21-11-05][dao.UserMapper.addUser]==> Parameters: 1(Integer), zhazha(String), 888888(String)
+[DEBUG][21-11-05][dao.UserMapper.addUser]<==    Updates: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@48c4245d] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.addUser]==>  Preparing: insert into mybatis.user value (?, ?, ?); 
+[DEBUG][21-11-05][dao.UserMapper.addUser]==> Parameters: 2001(Integer), zhazha(String), 888888(String)
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2032e725] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.modifyUserById]==>  Preparing: update mybatis.user set name=?, pwd=999999 where id = ?; 
+[DEBUG][21-11-05][dao.UserMapper.modifyUserById]==> Parameters: zha(String), 1(Integer)
+[DEBUG][21-11-05][dao.UserMapper.modifyUserById]<==    Updates: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcff1b9] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@426e505c] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.getUserList]<==      Total: 2001
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcff1b9]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dcc91fd] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@7906578e] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id = ?; 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==> Parameters: 1(Integer)
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]<==    Updates: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dcc91fd]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dcc91fd] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3df978b9] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id >1000; 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]<==    Updates: 1002
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7dcc91fd]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@48c4245d] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id >10; 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]<==    Updates: 990
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@3c89bb12] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==>  Preparing: delete from mybatis.user where id =?; 
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]==> Parameters: 1(Integer)
+[DEBUG][21-11-05][dao.UserMapper.deleteUserByID]<==    Updates: 0
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@36074e47]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53b98ff6] was not registered for synchronization because synchronization is not active
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@489543a6] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.addUser]==>  Preparing: insert into mybatis.user value (?, ?, ?); 
+[DEBUG][21-11-05][dao.UserMapper.addUser]==> Parameters: 1(Integer), zhazha(String), 888888(String)
+[DEBUG][21-11-05][dao.UserMapper.addUser]<==    Updates: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53b98ff6]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b022357] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==>  Preparing: select count(*) from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==> Parameters: 
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b022357] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==>  Preparing: select count(*) from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==> Parameters: 
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e6fd0b9] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@267517e4] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==>  Preparing: select count(1) from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]<==      Total: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3e6fd0b9]
+[DEBUG][21-11-05][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-05][dao.UserMapper]Cache Hit Ratio [dao.UserMapper]: 0.0
+[INFO][21-11-05][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-05][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b022357] will not be managed by Spring
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==>  Preparing: select count(1) from mybatis.user; 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]==> Parameters: 
+[DEBUG][21-11-05][dao.UserMapper.getUserCount]<==      Total: 1
+[DEBUG][21-11-05][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4]
+[DEBUG][21-11-29][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-29][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][21-11-29][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-29][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@5b022357] will not be managed by Spring
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@697446d4]
+[DEBUG][21-11-29][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70abf9b0] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-29][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][21-11-29][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-29][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6401d0a0] will not be managed by Spring
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70abf9b0]
+[DEBUG][21-11-29][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-29][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][21-11-29][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-29][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@b9dfc5a] will not be managed by Spring
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-29][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][21-11-29][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a]
+[DEBUG][21-11-30][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcff1b9] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-30][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][21-11-30][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-30][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@426e505c] will not be managed by Spring
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7fcff1b9]
+[DEBUG][21-11-30][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-30][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-30][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a] was not registered for synchronization because synchronization is not active
+[DEBUG][21-11-30][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][21-11-30][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][21-11-30][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@2787de58] will not be managed by Spring
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][21-11-30][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][21-11-30][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d59970a]
+[DEBUG][21-11-30][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[INFO][21-11-30][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][22-01-23][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-01-23][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][22-01-23][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6974a715] was not registered for synchronization because synchronization is not active
+[DEBUG][22-01-23][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][22-01-23][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][22-01-23][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6075b2d3] will not be managed by Spring
+[DEBUG][22-01-23][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][22-01-23][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][22-01-23][mapper.UserMapper.getUserList]<==      Total: 8
+[DEBUG][22-01-23][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6974a715]
+[DEBUG][22-01-24][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-01-24][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11ce2e22] was not registered for synchronization because synchronization is not active
+[DEBUG][22-01-24][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][22-01-24][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][22-01-24][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@6872f9c8] will not be managed by Spring
+[DEBUG][22-01-24][mapper.UserMapper.getUserList]==>  Preparing: select * from mybatis.user; 
+[DEBUG][22-01-24][mapper.UserMapper.getUserList]==> Parameters: 
+[DEBUG][22-01-24][mapper.UserMapper.getUserList]<==      Total: 7
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11ce2e22]
+[DEBUG][22-01-24][org.apache.ibatis.logging.LogFactory]Logging initialized using 'class org.apache.ibatis.logging.log4j.Log4jImpl' adapter.
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]Creating a new SqlSession
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42561fba] was not registered for synchronization because synchronization is not active
+[DEBUG][22-01-24][mapper.UserMapper]Cache Hit Ratio [mapper.UserMapper]: 0.0
+[INFO][22-01-24][com.alibaba.druid.pool.DruidDataSource]{dataSource-1} inited
+[DEBUG][22-01-24][org.mybatis.spring.transaction.SpringManagedTransaction]JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@18a645fd] will not be managed by Spring
+[DEBUG][22-01-24][mapper.UserMapper.getUserCount]==>  Preparing: select count(1) from mybatis.user; 
+[DEBUG][22-01-24][mapper.UserMapper.getUserCount]==> Parameters: 
+[DEBUG][22-01-24][mapper.UserMapper.getUserCount]<==      Total: 1
+[DEBUG][22-01-24][org.mybatis.spring.SqlSessionUtils]Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@42561fba]

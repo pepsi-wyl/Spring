@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd"
+>
+
+    <!-- 引入数据库配置文件  配置数据库dataSource -->
+    <context:property-placeholder location="classpath:mysql.properties"/>
+
+    <beans>
+
+        <!--使用Spring提供的JDBC:DriverManagerDataSource-->
+        <bean id="dateSourceSpring" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+            <property name="driverClassName"
+                      value="${mysql.driverClassName}"/>
+            <property name="url"
+                      value="${mysql.url}"/>
+            <property name="username"
+                      value="${mysql.username}"/>
+            <property name="password"
+                      value="${mysql.password}"/>
+        </bean>
+
+        <!--使用druid提供的DruidDataSource-->
+        <bean id="dateSourceDruid" class="com.alibaba.druid.pool.DruidDataSource">
+            <property name="driverClassName"
+                      value="${mysql.driverClassName}"/>
+            <property name="url"
+                      value="${mysql.url}"/>
+            <property name="username"
+                      value="${mysql.username}"/>
+            <property name="password"
+                      value="${mysql.password}"/>
+        </bean>
+
+        <!--利用Spring中SqlSessionFactoryBean生成sqlSessionFactory-->
+        <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+            <!--配置数据源-->
+            <property name="dataSource" ref="dateSourceDruid"/>
+            <!--引入外部(绑定)mybatis-config.xml-->
+            <property name="configLocation" value="mybatis-config.xml"/>
+        </bean>
+
+        <!--Mybatis下  配置扫描Dao接口包,动态实现Dao接口注入到spring容器中-->
+        <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+            <!-- 注入sqlSessionFactory -->
+            <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+            <!-- 给出需要扫描Dao接口包 -->
+            <property name="basePackage" value="mapper"/>
+        </bean>
+
+        <!--开启 Spring 的事务处理功能    创建事务管理器   Mybatis,JDBC使用DataSourceTransactionManager  -->
+        <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+            <!--注入数据源-->
+            <property name="dataSource" ref="dateSourceSpring"/>
+        </bean>
+
+        <!--开启事务注解-->
+        <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    </beans>
+
+</beans>
